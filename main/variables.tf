@@ -1,6 +1,6 @@
 variable "rg_name" {
   description = "the name of the rg"  
-  default = "prasanna-rg"
+  default = "prasana-rg"
 }
 
 variable "location" {
@@ -18,5 +18,5 @@ variable "tags" {
 
 variable "kv_name" {
     description = "name of kv"
-    default = "bana-keyvault"
+    default = "bana2-keyvault"
 }

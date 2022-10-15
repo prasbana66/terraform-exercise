@@ -5,12 +5,12 @@ variable "location" {
 
 variable "kv_name" {
     description = "name of the keyvault"
-    default = "bana-keyvault"
+    default = "bana2-keyvault"
 }
 
 variable "rg_name" {
     description = "name of the rg"
-    default = "prasanna-rg"
+    default = "prasana-rg"
 }
 
 variable "tenant_id" {
