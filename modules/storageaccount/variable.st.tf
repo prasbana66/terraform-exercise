@@ -10,12 +10,8 @@ variable "location" {
     default         = "northeurope"
 }
 
-variable "tags" {
-    description   = "mapping of tags"
-    type          = map (string)
-    default       = {
-        "environment" = "testing"
-        "source"      = "terraform"
-        "purpose"     = "craeting resource"
-    }
+variable "st_name" {
+    description   = "name of the storage"
+    type          = string
+    default       = "prasbana-storage"
 }

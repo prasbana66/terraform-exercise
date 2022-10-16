@@ -8,27 +8,26 @@ resource "azurerm_key_vault" "key_vault" {
   purge_protection_enabled    = false
 
   sku_name = "standard"
-
 }
 
 resource "azurerm_key_vault_access_policy" "key_vault_access_policy" {
+    tenant_id = var.tenant_id
+    object_id = var.object_id
     key_vault_id = azurerm_key_vault.key_vault.id
-    tenant_id    = var.tenant_id
-    object_id    = var.object_id
 
     key_permissions = [
       "Get",
     ]
 
     secret_permissions = [
-      "Set",
       "Get",
+      "List",
+      "Set",
       "Delete",
       "Purge",
-      "Recover",
     ]
 
     storage_permissions = [
       "Get",
     ]
-  }
+}
