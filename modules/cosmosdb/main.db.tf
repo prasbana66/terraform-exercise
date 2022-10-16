@@ -1,5 +1,5 @@
 resource "azurerm_cosmosdb_account" "db" {
-  name                = "prasanna-cosmosdb"
+  name                = var.cosmosdb
   location            = var.location
   resource_group_name = var.rg_name
   offer_type          = "Standard"

@@ -1,24 +1,27 @@
+variable "rg_name" {
+    description = "name of the rg"
+    type        = string
+    default     = "prasbana-rg"
+}
+
 variable "location" {
-    description = "keyvault location"
-    default = "northeurope"
+    description = "azure region location"
+    type        = string
+    default     = "northeurope"
 }
 
 variable "kv_name" {
-    description = "name of the keyvault"
-    default = "bana-keyvault"
-}
-
-variable "rg_name" {
-    description = "name of the rg"
-    default = "prasanna-rg"
+    description = "name of the kv"
+    type        = string
+    default     = "prasbana-kv"
 }
 
 variable "tenant_id" {
-    description = "tenant id"
-    default = ""
+    description = "name of the id"
+    default     = ""
 }
 
 variable "object_id" {
-    description = "object-id"
-    default = ""
+    description = "name of the object_id"
+    default     = ""
 }
